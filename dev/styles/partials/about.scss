@@ -1,0 +1,36 @@
+.aboutMeWrapper {
+    display: flex;
+    justify-content: space-between;
+
+
+.aboutMeImage {
+    width: 39.316%;
+}
+
+.aboutMeText {
+    width: 50.85%;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+
+    h2 {
+        color:  #000000;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    p {
+        color:  #464646;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+    }
+
+
+}
+
+
+}

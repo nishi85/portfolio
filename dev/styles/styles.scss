@@ -1,0 +1,18 @@
+@import "partials/setup.scss";
+@import "partials/header.scss";
+@import "partials/about.scss";
+@import "partials/skills.scss";
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+.wrapper {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
