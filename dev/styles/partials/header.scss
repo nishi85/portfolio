@@ -1,21 +1,43 @@
 header {
     
-    background-image: url("../../../public/assets/nishi-background.jpg");
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background: rgba(239, 239, 247, 0.85), url("../../../public/assets/nishi-background.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    
+
+background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 35, 29, 0)),url("../../../public/assets/nishi-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  max-width: 100%;
+  background-position: center;
+  color: black;
+
     nav {
         width: 100%;
         // background: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+          background: transparent none repeat scroll 0 0;
+  border-bottom: 0 none;
+  left: 0;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 1.3s linear 0s;
+  width: 100%;
+  z-index: 10000;
         .logoContainer {
             // border: 1px solid blue;
-            width: 9.145%;
+            width: 7.145%;
             img {
-                width: 100%;
+                // width: 100%;
+                width: 70px;
+                height: 70px;
             }
         }
         ul {
@@ -29,6 +51,13 @@ header {
               text-decoration: none;  
               text-transform: uppercase;
               color:  #aaaaaa;
+              border-bottom: 2px solid transparent;
+              transition: all 1s;
+
+              &:hover {
+                  color: white;
+                  border-bottom: 2px solid white;
+              }
 
             }
         }
@@ -39,9 +68,10 @@ header {
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         border: 1px solid blue;
-        height: 81vh;
+        height: 100vh;
+        position: relative;
     }
 
     .introContainer {
@@ -50,8 +80,9 @@ header {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        border: 1px solid green;
+        border: 1px solid red;
         justify-content: center;
+        
         h1 {
             font-size: 24px;
             font-weight: 700;
@@ -76,23 +107,46 @@ header {
         width: 100%;
         display: flex;
         justify-content: center;
+        border: 1px solid green;
+        position: absolute;
+        bottom: 4%;
+        left:0;
             ul {
             display: flex;
             justify-content: space-between;
             width: 15%;
             margin: 0 auto;
+            padding-left: 0;
 
             li {
                 list-style: none;
             a {
               text-decoration: none;  
               text-transform: uppercase;
-              color:  white;
+              color:  black;
               font-size: 24px;
               margin-right: 50px;
+              transition: all 1s;
+
+              &:hover {
+                  color: white;
+              }
             }
         }
         }
     }
     
 }    
+
+.menu li:hover > a, .menu li.active > a {
+//   color: #72b796;
+}
+.menu li:hover, .menu li.active {
+  background: transparent none repeat scroll 0 0;
+}
+.menu.stick {
+  background: #000 none repeat scroll 0 0;
+}
+
+
+

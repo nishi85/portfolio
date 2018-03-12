@@ -1,6 +1,7 @@
 .aboutMeWrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 115px;
 
 
 .aboutMeImage {
@@ -12,7 +13,6 @@
 
     .aboutMeBack {
         position: absolute;
-        border: 1px solid blue;
         bottom: -4%;
         left: -30px;
         width: 90%;

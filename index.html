@@ -10,20 +10,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-		<main>
+		<main id="home">
 			<header>
 				<div class="wrapper">
-					<nav>
+					<nav id="sticker" class="menu">
 						<div class="logoContainer">
 							<img src="./public/assets/C.png" alt="">
 						</div>
-						<ul>
-							<li><a href="">home</a></li>
-							<li><a href="">about</a></li>
-							<li><a href="">skills</a></li>
-							<li><a href="">portfolio</a></li>
-							<li><a href="">resume</a></li>
-							<li><a href="">contact</a></li>
+						<ul class="alpha">
+							<li><a href="#home">home</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#skills">skills</a></li>
+							<li><a href="#portfolio">portfolio</a></li>
+							<li><a href="#contact">contact</a></li>
 						</ul>
 					</nav>
 				
@@ -33,20 +32,20 @@
 							<h1>Hello, <span>I'm Nishi Rathod</span></h1>
 							<h3>front-end web developer</h3>
 						</div>
-						<div class="socialShare">
-							<ul>
-								<li><a href=""><i class="fab fa-twitter"></i></a></li>
-								<li><a href=""><i class="fab fa-github"></i></a></li>
-								<li><a href=""><i class="fab fa-linkedin"></i></a></li>	
-								<li><a href=""><i class="far fa-envelope"></i></a></li>	
-							</ul>
-						</div>
+								<div class="socialShare">
+									<ul>
+										<li><a href=""><i class="fab fa-twitter"></i></a></li>
+										<li><a href=""><i class="fab fa-github"></i></a></li>
+										<li><a href=""><i class="fab fa-linkedin"></i></a></li>	
+										<li><a href=""><i class="far fa-envelope"></i></a></li>	
+									</ul>
+								</div>
 				</div>
 				
 				
 				</div>
 			</header>
-			<section class="aboutMe">
+			<section class="aboutMe" id="about">
 				<div class="wrapper aboutMeWrapper">
 					<div class="aboutMeImage">
 						<img src="./public/assets/nishi-headshot.jpg" alt="">
@@ -64,7 +63,7 @@
 
 				</div>
 			</section>
-			<section class="skills">
+			<section class="skills" id="skills">
 				<div class="wrapper">
 					<h2>My Skills</h2>
 					<div class="skillContainer">
@@ -104,7 +103,7 @@
 
 				</div>
 			</section>
-			<section class="projects">
+			<section class="projects" id="portfolio">
 				<div class="wrapper">
 					<h2>Recent Work</h2>
 				
@@ -119,6 +118,7 @@
 							<h3>title</h3>
 							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum inventore provident impedit explicabo labore nesciunt minima quaerat, debitis, nihil perferendis voluptatum velit ab quam! Amet pariatur totam nobis eligendi quos.</p>
 							<a href="">View Live</a>
+							<a href="">View Github</a>
 						</div>
 					</div>
 
@@ -127,6 +127,7 @@
 							<h3>title</h3>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vel ullam officia, at magni dignissimos. Natus assumenda fuga laboriosam similique quod molestiae beatae ab, laudantium eligendi officiis hic veritatis praesentium.</p>
 							<a href="">View Live</a>
+							<a href="">View Github</a>
 						</div>
 						<div class="projectImage">
 							<img src= "./public/assets/wcv.png" alt="">
@@ -141,6 +142,7 @@
 							<h3>title</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, rem nihil ab fugit magnam, optio accusantium qui doloremque sed repudiandae ex reiciendis quos saepe perferendis deserunt beatae eveniet consequatur eum!</p>
 							<a href="">View Live</a>
+							<a href="">View Github</a>
 						</div>
 					</div>
 
@@ -152,6 +154,7 @@
 							<h3>title</h3>
 							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magnam natus, vero, saepe voluptatum officiis dignissimos facere possimus dolore quo consequuntur suscipit delectus nemo odit! Cum facere soluta odit nobis.</p>
 							<a href="">View Live</a>
+							<a href="">View Github</a>
 						</div>
 					</div>
 
@@ -159,7 +162,7 @@
 			</div>
 
 			</section>
-			<section class="contact">
+			<section class="contact" id="contact">
 				<div class="wrapper contactWrapper">
 					<h2>Contact</h2>
 
@@ -197,6 +200,30 @@
 		</main>
 		
 		
-		<script src=></script>
+	<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+	<script type = "text/javascript">
+	(function ($) {
+			"use strict";
+			/*---------------------
+			 TOP Menu Stick
+			--------------------- */
+			var s = $("#sticker");
+			var pos = s.position();
+			$(window).scroll(function () {
+				var windowpos = $(window).scrollTop();
+				if (windowpos > pos.top) {
+					s.addClass("stick");
+				} else {
+					s.removeClass("stick");
+				}
+			});
+
+		})(jQuery);    
+		
+		
+		</script>
+
+		
 	</body>
 	</html>
