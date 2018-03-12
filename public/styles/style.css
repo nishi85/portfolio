@@ -131,71 +131,92 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-header nav {
-  width: 100%;
-  background: red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header nav ul {
-    display: flex;
-    width: 58.12%;
-    justify-content: space-between; }
-    header nav ul li {
-      list-style: none; }
-      header nav ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #aaaaaa; }
-  header nav .logoContainer {
-    border: 1px solid blue;
-    width: 9.145%; }
-    header nav .logoContainer img {
-      width: 100%; }
-
-header .introContainer {
-  margin: 0 auto;
-  width: 58.12%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  border: 1px solid green;
-  justify-content: center; }
-  header .introContainer h1 {
-    font-size: 24px;
-    font-weight: 700; }
-    header .introContainer h1 span {
-      display: block;
-      font-size: 72px; }
-  header .introContainer h3 {
-    color: #606060;
-    font-size: 12px;
-    line-height: 16px;
+header {
+  background-image: url("../../../public/assets/nishi-background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  header nav {
     width: 100%;
-    text-transform: uppercase; }
-
-header .socialShare {
-  width: 100%;
-  background: red;
-  display: flex;
-  justify-content: center; }
-  header .socialShare ul {
     display: flex;
     justify-content: space-between;
-    width: 15%; }
-    header .socialShare ul li {
-      list-style: none; }
-      header .socialShare ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-        font-size: 24px; }
+    align-items: center; }
+    header nav .logoContainer {
+      width: 9.145%; }
+      header nav .logoContainer img {
+        width: 100%; }
+    header nav ul {
+      display: flex;
+      width: 58.12%;
+      justify-content: space-between; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #aaaaaa; }
+  header .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid blue;
+    height: 81vh; }
+  header .introContainer {
+    margin: 0 auto;
+    width: 58.12%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 1px solid green;
+    justify-content: center; }
+    header .introContainer h1 {
+      font-size: 24px;
+      font-weight: 700; }
+      header .introContainer h1 span {
+        display: block;
+        font-size: 72px; }
+    header .introContainer h3 {
+      color: #606060;
+      font-size: 12px;
+      line-height: 16px;
+      width: 100%;
+      text-transform: uppercase; }
+  header .socialShare {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    header .socialShare ul {
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+      margin: 0 auto; }
+      header .socialShare ul li {
+        list-style: none; }
+        header .socialShare ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          font-size: 24px;
+          margin-right: 50px; }
 
 .aboutMeWrapper {
   display: flex;
   justify-content: space-between; }
   .aboutMeWrapper .aboutMeImage {
-    width: 39.316%; }
+    width: 39.316%;
+    border: 2px solid grey;
+    margin: 30px;
+    position: relative;
+    z-index: 99; }
+    .aboutMeWrapper .aboutMeImage .aboutMeBack {
+      position: absolute;
+      border: 1px solid blue;
+      bottom: -4%;
+      left: -30px;
+      width: 90%;
+      z-index: -1; }
   .aboutMeWrapper .aboutMeText {
     width: 50.85%;
     display: flex;
@@ -205,7 +226,10 @@ header .socialShare {
     .aboutMeWrapper .aboutMeText h2 {
       color: #000000;
       font-size: 36px;
-      font-weight: 700; }
+      font-weight: 700;
+      background-image: url("../../../public/assets/titleBG.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
     .aboutMeWrapper .aboutMeText p {
       color: #464646;
       font-size: 16px;
@@ -215,32 +239,141 @@ header .socialShare {
 
 .skills {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: #fafafa;
+  margin: 25px 0; }
   .skills h2 {
     color: #000000;
     font-size: 36px;
-    /* Approximation due to font substitution */
     font-weight: 700;
     border: 1px solid blue;
-    margin: 0 auto; }
+    margin: 25px auto;
+    background-image: url("../../../public/assets/titleBG.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
   .skills .skillContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid green; }
     .skills .skillContainer .skill {
-      width: 33.3333%;
-      padding: 60px; }
+      width: calc(33.333% - 25px);
+      margin-right: 25px;
+      padding: 50px; }
       .skills .skillContainer .skill:hover {
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
       .skills .skillContainer .skill i {
         font-size: 60px; }
 
+.projects {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0; }
+  .projects h2 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    border: 1px solid blue;
+    margin: 25px auto;
+    background-image: url("../../../public/assets/titleBG.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .projects .projectContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .projects .projectContainer .project {
+      width: 100%;
+      display: flex; }
+      .projects .projectContainer .project .projectImage {
+        width: 50%; }
+      .projects .projectContainer .project .projectDescription {
+        width: 50%; }
+
+.contact {
+  width: 100%;
+  text-align: center;
+  background-color: #fafafa; }
+  .contact .contactWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fafafa; }
+    .contact .contactWrapper h2 {
+      color: #000000;
+      font-size: 36px;
+      font-weight: 700;
+      border: 1px solid blue;
+      margin: 15px auto;
+      background-image: url("../../../public/assets/titleBG.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .contact .contactWrapper .contactContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 25px auto; }
+      .contact .contactWrapper .contactContainer a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px; }
+        .contact .contactWrapper .contactContainer a svg {
+          margin-right: 15px; }
+    .contact .contactWrapper form {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1); }
+      .contact .contactWrapper form input[type=text], .contact .contactWrapper form input[type=email] {
+        width: 48%;
+        margin: 10px 10px 10px 10px; }
+      .contact .contactWrapper form textarea {
+        width: 96%;
+        margin: 0 10px; }
+      .contact .contactWrapper form input[type=submit] {
+        border: 2px solid transparent;
+        width: 183px;
+        height: 44px;
+        display: block;
+        margin: 40px auto;
+        background-color: #000000;
+        font-family: Montserrat;
+        color: #fefefe;
+        font-size: 12px; }
+
+footer {
+  background-color: #fafafa;
+  padding-top: 25px; }
+  footer ul {
+    display: flex;
+    width: 25.12%;
+    justify-content: space-around;
+    margin: 0px auto;
+    background-color: #fafafa;
+    padding: 25px; }
+    footer ul li {
+      list-style: none; }
+      footer ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #aaaaaa; }
+  footer h3 {
+    color: #606060;
+    font-size: 18px;
+    /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;
+    /* Approximation due to font substitution */
+    text-align: center;
+    margin: 0; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
 
 img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 .wrapper {
   max-width: 1170px;
@@ -252,7 +385,18 @@ img {
   display: flex;
   justify-content: space-between; }
   .aboutMeWrapper .aboutMeImage {
-    width: 39.316%; }
+    width: 39.316%;
+    border: 2px solid grey;
+    margin: 30px;
+    position: relative;
+    z-index: 99; }
+    .aboutMeWrapper .aboutMeImage .aboutMeBack {
+      position: absolute;
+      border: 1px solid blue;
+      bottom: -4%;
+      left: -30px;
+      width: 90%;
+      z-index: -1; }
   .aboutMeWrapper .aboutMeText {
     width: 50.85%;
     display: flex;
@@ -262,7 +406,10 @@ img {
     .aboutMeWrapper .aboutMeText h2 {
       color: #000000;
       font-size: 36px;
-      font-weight: 700; }
+      font-weight: 700;
+      background-image: url("../../../public/assets/titleBG.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
     .aboutMeWrapper .aboutMeText p {
       color: #464646;
       font-size: 16px;
@@ -270,65 +417,178 @@ img {
       line-height: 24px;
       text-align: left; }
 
-header nav {
+.contact {
   width: 100%;
-  background: red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header nav ul {
+  text-align: center;
+  background-color: #fafafa; }
+  .contact .contactWrapper {
     display: flex;
-    width: 58.12%;
-    justify-content: space-between; }
-    header nav ul li {
+    flex-wrap: wrap;
+    background-color: #fafafa; }
+    .contact .contactWrapper h2 {
+      color: #000000;
+      font-size: 36px;
+      font-weight: 700;
+      border: 1px solid blue;
+      margin: 15px auto;
+      background-image: url("../../../public/assets/titleBG.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .contact .contactWrapper .contactContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin: 25px auto; }
+      .contact .contactWrapper .contactContainer a {
+        text-decoration: none;
+        color: black;
+        font-size: 24px; }
+        .contact .contactWrapper .contactContainer a svg {
+          margin-right: 15px; }
+    .contact .contactWrapper form {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1); }
+      .contact .contactWrapper form input[type=text], .contact .contactWrapper form input[type=email] {
+        width: 48%;
+        margin: 10px 10px 10px 10px; }
+      .contact .contactWrapper form textarea {
+        width: 96%;
+        margin: 0 10px; }
+      .contact .contactWrapper form input[type=submit] {
+        border: 2px solid transparent;
+        width: 183px;
+        height: 44px;
+        display: block;
+        margin: 40px auto;
+        background-color: #000000;
+        font-family: Montserrat;
+        color: #fefefe;
+        font-size: 12px; }
+
+footer {
+  background-color: #fafafa;
+  padding-top: 25px; }
+  footer ul {
+    display: flex;
+    width: 25.12%;
+    justify-content: space-around;
+    margin: 0px auto;
+    background-color: #fafafa;
+    padding: 25px; }
+    footer ul li {
       list-style: none; }
-      header nav ul li a {
+      footer ul li a {
         text-decoration: none;
         text-transform: uppercase;
         color: #aaaaaa; }
-  header nav .logoContainer {
-    border: 1px solid blue;
-    width: 9.145%; }
-    header nav .logoContainer img {
-      width: 100%; }
-
-header .introContainer {
-  margin: 0 auto;
-  width: 58.12%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  border: 1px solid green;
-  justify-content: center; }
-  header .introContainer h1 {
-    font-size: 24px;
-    font-weight: 700; }
-    header .introContainer h1 span {
-      display: block;
-      font-size: 72px; }
-  header .introContainer h3 {
+  footer h3 {
     color: #606060;
-    font-size: 12px;
-    line-height: 16px;
-    width: 100%;
-    text-transform: uppercase; }
+    font-size: 18px;
+    /* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;
+    /* Approximation due to font substitution */
+    text-align: center;
+    margin: 0; }
 
-header .socialShare {
-  width: 100%;
-  background: red;
-  display: flex;
-  justify-content: center; }
-  header .socialShare ul {
+header {
+  background-image: url("../../../public/assets/nishi-background.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  header nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 15%; }
-    header .socialShare ul li {
-      list-style: none; }
-      header .socialShare ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-        font-size: 24px; }
+    align-items: center; }
+    header nav .logoContainer {
+      width: 9.145%; }
+      header nav .logoContainer img {
+        width: 100%; }
+    header nav ul {
+      display: flex;
+      width: 58.12%;
+      justify-content: space-between; }
+      header nav ul li {
+        list-style: none; }
+        header nav ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #aaaaaa; }
+  header .hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid blue;
+    height: 81vh; }
+  header .introContainer {
+    margin: 0 auto;
+    width: 58.12%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 1px solid green;
+    justify-content: center; }
+    header .introContainer h1 {
+      font-size: 24px;
+      font-weight: 700; }
+      header .introContainer h1 span {
+        display: block;
+        font-size: 72px; }
+    header .introContainer h3 {
+      color: #606060;
+      font-size: 12px;
+      line-height: 16px;
+      width: 100%;
+      text-transform: uppercase; }
+  header .socialShare {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    header .socialShare ul {
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+      margin: 0 auto; }
+      header .socialShare ul li {
+        list-style: none; }
+        header .socialShare ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
+          font-size: 24px;
+          margin-right: 50px; }
+
+.projects {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0; }
+  .projects h2 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    border: 1px solid blue;
+    margin: 25px auto;
+    background-image: url("../../../public/assets/titleBG.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .projects .projectContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .projects .projectContainer .project {
+      width: 100%;
+      display: flex; }
+      .projects .projectContainer .project .projectImage {
+        width: 50%; }
+      .projects .projectContainer .project .projectDescription {
+        width: 50%; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -465,22 +725,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .skills {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  background-color: #fafafa;
+  margin: 25px 0; }
   .skills h2 {
     color: #000000;
     font-size: 36px;
-    /* Approximation due to font substitution */
     font-weight: 700;
     border: 1px solid blue;
-    margin: 0 auto; }
+    margin: 25px auto;
+    background-image: url("../../../public/assets/titleBG.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
   .skills .skillContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid green; }
     .skills .skillContainer .skill {
-      width: 33.3333%;
-      padding: 60px; }
+      width: calc(33.333% - 25px);
+      margin-right: 25px;
+      padding: 50px; }
       .skills .skillContainer .skill:hover {
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
       .skills .skillContainer .skill i {

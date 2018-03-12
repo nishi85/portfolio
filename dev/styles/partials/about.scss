@@ -5,6 +5,20 @@
 
 .aboutMeImage {
     width: 39.316%;
+    border: 2px solid grey;
+    margin: 30px;
+    position: relative;
+    z-index: 99;
+
+    .aboutMeBack {
+        position: absolute;
+        border: 1px solid blue;
+        bottom: -4%;
+        left: -30px;
+        width: 90%;
+        z-index: -1
+        
+    }
 }
 
 .aboutMeText {
@@ -14,12 +28,16 @@
     // align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    
 
 
     h2 {
         color:  #000000;
         font-size: 36px;
         font-weight: 700;
+         background-image: url("../../../public/assets/titleBG.png");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     p {
         color:  #464646;

@@ -2,6 +2,9 @@
 @import "partials/header.scss";
 @import "partials/about.scss";
 @import "partials/skills.scss";
+@import "partials/projects.scss";
+@import "partials/contact.scss";
+@import "partials/footer.scss";
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +12,7 @@ body {
 
 img {
     width: 100%;
+    display: block;
 }
 .wrapper {
     max-width: 1170px;

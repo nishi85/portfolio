@@ -1,0 +1,33 @@
+.projects {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    h2 {
+        color:  #000000;
+        font-size: 36px;
+        font-weight: 700;
+        border: 1px solid blue;
+        margin: 25px auto;
+         background-image: url("../../../public/assets/titleBG.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .projectContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .project {
+        width: 100%;
+        display: flex;
+            .projectImage {
+                width: 50%;
+            }
+            .projectDescription {
+                width: 50%;
+            }
+        }
+    }
+
+}
