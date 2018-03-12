@@ -162,7 +162,8 @@ header {
     header nav ul {
       display: flex;
       width: 58.12%;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-right: 25px; }
       header nav ul li {
         list-style: none; }
         header nav ul li a {
@@ -333,7 +334,39 @@ header {
         .projects .projectContainer .project .projectImage:hover {
           transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
-        width: 48%; }
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .projects .projectContainer .project .projectDescription h3 {
+          color: #000000;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0 auto; }
+        .projects .projectContainer .project .projectDescription p {
+          color: #606060;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px; }
+        .projects .projectContainer .project .projectDescription h4 {
+          font-style: italic;
+          margin: 0 auto;
+          width: 100%; }
+        .projects .projectContainer .project .projectDescription a {
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+          width: 150px;
+          height: 44px;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: 14px;
+          font-size: 14px;
+          margin: 10px;
+          transition: all 1s; }
+          .projects .projectContainer .project .projectDescription a:hover {
+            background-color: black;
+            color: white; }
 
 .contact {
   width: 100%;
@@ -591,7 +624,8 @@ header {
     header nav ul {
       display: flex;
       width: 58.12%;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin-right: 25px; }
       header nav ul li {
         list-style: none; }
         header nav ul li a {
@@ -695,7 +729,39 @@ header {
         .projects .projectContainer .project .projectImage:hover {
           transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
-        width: 48%; }
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .projects .projectContainer .project .projectDescription h3 {
+          color: #000000;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0 auto; }
+        .projects .projectContainer .project .projectDescription p {
+          color: #606060;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px; }
+        .projects .projectContainer .project .projectDescription h4 {
+          font-style: italic;
+          margin: 0 auto;
+          width: 100%; }
+        .projects .projectContainer .project .projectDescription a {
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+          width: 150px;
+          height: 44px;
+          text-decoration: none;
+          text-transform: uppercase;
+          padding: 14px;
+          font-size: 14px;
+          margin: 10px;
+          transition: all 1s; }
+          .projects .projectContainer .project .projectDescription a:hover {
+            background-color: black;
+            color: white; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
