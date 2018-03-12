@@ -234,6 +234,10 @@ header {
 .menu.stick {
   background: #000 none repeat scroll 0 0; }
 
+#top-menu li.active a {
+  border-bottom: 3px solid white;
+  color: white; }
+
 .aboutMeWrapper {
   display: flex;
   justify-content: space-between;
@@ -280,7 +284,7 @@ header {
     font-size: 36px;
     font-weight: 700;
     border: 1px solid blue;
-    margin: 65px auto;
+    margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -288,7 +292,8 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid green; }
+    border: 1px solid green;
+    justify-content: space-between; }
     .skills .skillContainer .skill {
       width: calc(33.333% - 25px);
       margin-right: 25px;
@@ -297,6 +302,8 @@ header {
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
       .skills .skillContainer .skill i {
         font-size: 60px; }
+    .skills .skillContainer .skill:nth-child(3n) {
+      margin-right: 0; }
 
 .projects {
   width: 100%;
@@ -307,7 +314,7 @@ header {
     font-size: 36px;
     font-weight: 700;
     border: 1px solid blue;
-    margin: 65px auto;
+    margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -317,11 +324,16 @@ header {
     flex-wrap: wrap; }
     .projects .projectContainer .project {
       width: 100%;
-      display: flex; }
+      display: flex;
+      margin: 25px; }
       .projects .projectContainer .project .projectImage {
-        width: 50%; }
+        width: 48%;
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s; }
+        .projects .projectContainer .project .projectImage:hover {
+          transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
-        width: 50%; }
+        width: 48%; }
 
 .contact {
   width: 100%;
@@ -336,7 +348,7 @@ header {
       font-size: 36px;
       font-weight: 700;
       border: 1px solid blue;
-      margin: 65px auto;
+      margin: 75px auto;
       background-image: url("../../../public/assets/titleBG.png");
       background-size: contain;
       background-repeat: no-repeat; }
@@ -356,7 +368,7 @@ header {
         .contact .contactWrapper .contactContainer a svg {
           margin-right: 10px; }
     .contact .contactWrapper form {
-      width: 60%;
+      width: 75%;
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
@@ -473,7 +485,7 @@ img {
       font-size: 36px;
       font-weight: 700;
       border: 1px solid blue;
-      margin: 65px auto;
+      margin: 75px auto;
       background-image: url("../../../public/assets/titleBG.png");
       background-size: contain;
       background-repeat: no-repeat; }
@@ -493,7 +505,7 @@ img {
         .contact .contactWrapper .contactContainer a svg {
           margin-right: 10px; }
     .contact .contactWrapper form {
-      width: 60%;
+      width: 75%;
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
@@ -651,6 +663,10 @@ header {
 .menu.stick {
   background: #000 none repeat scroll 0 0; }
 
+#top-menu li.active a {
+  border-bottom: 3px solid white;
+  color: white; }
+
 .projects {
   width: 100%;
   text-align: center;
@@ -660,7 +676,7 @@ header {
     font-size: 36px;
     font-weight: 700;
     border: 1px solid blue;
-    margin: 65px auto;
+    margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -670,11 +686,16 @@ header {
     flex-wrap: wrap; }
     .projects .projectContainer .project {
       width: 100%;
-      display: flex; }
+      display: flex;
+      margin: 25px; }
       .projects .projectContainer .project .projectImage {
-        width: 50%; }
+        width: 48%;
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.5s; }
+        .projects .projectContainer .project .projectImage:hover {
+          transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
-        width: 50%; }
+        width: 48%; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -819,7 +840,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 36px;
     font-weight: 700;
     border: 1px solid blue;
-    margin: 65px auto;
+    margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -827,7 +848,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid green; }
+    border: 1px solid green;
+    justify-content: space-between; }
     .skills .skillContainer .skill {
       width: calc(33.333% - 25px);
       margin-right: 25px;
@@ -836,3 +858,5 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
       .skills .skillContainer .skill i {
         font-size: 60px; }
+    .skills .skillContainer .skill:nth-child(3n) {
+      margin-right: 0; }

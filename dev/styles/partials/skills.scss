@@ -8,7 +8,7 @@
         font-size: 36px;
         font-weight: 700;
         border: 1px solid blue;
-        margin: 65px auto;
+        margin: 75px auto;
         background-image: url("../../../public/assets/titleBG.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -24,19 +24,23 @@
         display: flex;
         flex-wrap: wrap;
         border: 1px solid green;
+        justify-content: space-between;
         .skill {
             width: calc(33.333% - 25px);
             margin-right: 25px;
             padding: 50px;
-    &:hover {
-        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
-    }
+            &:hover {
+                box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+            }
             i {
-            font-size: 60px;
-            // color: black;
-            
+                font-size: 60px;
+                // color: black;
+                
+            }
         }
-        }
+                        .skill:nth-child(3n) {
+                            margin-right: 0;
+                        }
     }
 
 }

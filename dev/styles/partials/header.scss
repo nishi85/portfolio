@@ -1,12 +1,6 @@
 header {
     
-    // background: rgba(239, 239, 247, 0.85), url("../../../public/assets/nishi-background.jpg");
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: center;
-    
-
-background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 35, 29, 0)),url("../../../public/assets/nishi-background.jpg");
+    background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 35, 29, 0)),url("../../../public/assets/nishi-background.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -16,26 +10,22 @@ background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 
 
     nav {
         width: 100%;
-        // background: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-          background: transparent none repeat scroll 0 0;
-  border-bottom: 0 none;
-  left: 0;
-  margin: 0 auto;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  transition: all 1.3s linear 0s;
-  width: 100%;
-  z-index: 10000;
+        background: transparent none repeat scroll 0 0;
+        border-bottom: 0 none;
+        left: 0;
+        margin: 0 auto;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        transition: all 1.3s linear 0s;
+        width: 100%;
+        z-index: 10000;
         .logoContainer {
-            // border: 1px solid blue;
             width: 7.145%;
             img {
-                // width: 100%;
                 width: 70px;
                 height: 70px;
             }
@@ -148,5 +138,10 @@ background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 
   background: #000 none repeat scroll 0 0;
 }
 
+
+#top-menu li.active a {
+    border-bottom: 3px solid white;
+    color: white;
+}
 
 
