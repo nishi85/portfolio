@@ -155,10 +155,10 @@ header {
     width: 100%;
     z-index: 10000; }
     header nav .logoContainer {
-      width: 7.145%; }
+      width: 5.145%; }
       header nav .logoContainer img {
-        width: 70px;
-        height: 70px; }
+        width: 50px;
+        height: 50px; }
     header nav ul {
       display: flex;
       width: 58.12%;
@@ -171,7 +171,8 @@ header {
           text-transform: uppercase;
           color: #aaaaaa;
           border-bottom: 2px solid transparent;
-          transition: all 1s; }
+          transition: all 1s;
+          font-size: 12px; }
           header nav ul li a:hover {
             color: white;
             border-bottom: 2px solid white; }
@@ -196,8 +197,8 @@ header {
         display: block;
         font-size: 72px; }
     header .introContainer h3 {
-      color: #606060;
-      font-size: 12px;
+      color: white;
+      font-size: 20px;
       line-height: 16px;
       width: 100%;
       text-transform: uppercase; }
@@ -224,7 +225,7 @@ header {
           margin-right: 50px;
           transition: all 1s; }
           header .socialShare ul li a:hover {
-            color: white; }
+            color: grey; }
 
 .menu li:hover, .menu li.active {
   background: transparent none repeat scroll 0 0; }
@@ -238,10 +239,19 @@ header {
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header .socialShare ul {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 20px; }
+    header .socialShare ul li a {
+      font-size: 18px;
+      margin-right: 20px; } }
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
   header nav {
-    justify-content: space-between; }
+    justify-content: flex-start; }
     header nav ul {
       width: 75%;
       justify-content: space-between;
@@ -296,7 +306,7 @@ header {
       color: #464646;
       font-size: 16px;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 36px;
       text-align: left; }
 
 /* Landscape phone to portrait tablet */
@@ -320,8 +330,8 @@ header {
         font-size: 24px; }
       .aboutMeWrapper .aboutMeText p {
         color: #464646;
-        font-size: 14px;
-        line-height: 14px; } }
+        font-size: 12px;
+        line-height: 18px; } }
 
 .skills {
   width: 100%;
@@ -333,6 +343,7 @@ header {
     font-size: 36px;
     font-weight: 700;
     margin: 75px auto;
+    margin-bottom: 25px;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -345,8 +356,6 @@ header {
       width: calc(33.333% - 25px);
       margin-right: 25px;
       padding: 50px; }
-      .skills .skillContainer .skill:hover {
-        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
       .skills .skillContainer .skill i {
         font-size: 60px; }
     .skills .skillContainer .skill:nth-child(3n) {
@@ -382,6 +391,7 @@ header {
     font-size: 36px;
     font-weight: 700;
     margin: 75px auto;
+    margin-bottom: 25px;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -397,28 +407,27 @@ header {
         width: 47%;
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
         transition: all 0.5s; }
-        .projects .projectContainer .project .projectImage:hover {
-          transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
         width: 47%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; }
+        justify-content: center;
+        text-align: left; }
         .projects .projectContainer .project .projectDescription h3 {
           color: #000000;
           font-size: 24px;
-          font-weight: 700;
-          margin: 0 auto; }
+          font-weight: 700; }
         .projects .projectContainer .project .projectDescription p {
           color: #606060;
           font-size: 14px;
           font-weight: 400;
           line-height: 24px;
-          padding: 10px; }
+          padding: 20px; }
         .projects .projectContainer .project .projectDescription h4 {
           font-style: italic;
           margin: 0 auto;
-          width: 100%; }
+          width: 100%;
+          padding: 20px; }
         .projects .projectContainer .project .projectDescription a {
           background-color: white;
           color: black;
@@ -486,6 +495,7 @@ header {
       font-size: 36px;
       font-weight: 700;
       margin: 75px auto;
+      margin-bottom: 25px;
       background-image: url("../../../public/assets/titleBG.png");
       background-size: contain;
       background-repeat: no-repeat; }
@@ -505,18 +515,21 @@ header {
         .contact .contactWrapper .contactContainer a svg {
           margin-right: 10px; }
     .contact .contactWrapper form {
-      width: 75%;
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
       background-color: #ffffff;
-      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1); }
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px; }
       .contact .contactWrapper form input[type=text], .contact .contactWrapper form input[type=email] {
-        width: 48%;
-        margin: 10px 10px 10px 10px; }
+        width: 45%;
+        margin: 15px auto;
+        padding: 10px; }
       .contact .contactWrapper form textarea {
-        width: 96%;
-        margin: 0 10px; }
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px; }
       .contact .contactWrapper form input[type=submit] {
         border: 2px solid transparent;
         width: 183px;
@@ -532,6 +545,43 @@ header {
           background: white;
           color: black;
           border: 1px solid black; }
+
+@media (max-width: 940px) {
+  .contact textarea {
+    margin: 25px auto; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact .contactWrapper {
+    justify-content: center; }
+    .contact .contactWrapper h2 {
+      font-size: 24px;
+      margin: 45px auto;
+      margin-bottom: 15px; }
+    .contact .contactWrapper .contactContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 15px auto; }
+      .contact .contactWrapper .contactContainer a {
+        font-size: 16px;
+        width: 100%;
+        margin: 5px; }
+        .contact .contactWrapper .contactContainer a svg {
+          margin-right: 10px; }
+    .contact .contactWrapper form {
+      width: 90%;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      box-shadow: none; }
+      .contact .contactWrapper form input[type=text], .contact .contactWrapper form input[type=email] {
+        width: 90%;
+        margin: 15px auto; }
+      .contact .contactWrapper form textarea {
+        width: 90%;
+        margin: 15px auto; } }
 
 footer {
   background-color: #fafafa;
@@ -559,6 +609,21 @@ footer {
     line-height: 24px;
     text-align: center;
     margin: 0; }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  footer {
+    padding-top: 15px; }
+    footer ul {
+      width: 45.12%; }
+    footer h3 {
+      color: #606060;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      margin: 0; } }
 
 body {
   font-family: 'Montserrat', sans-serif; }
@@ -606,7 +671,7 @@ img {
       color: #464646;
       font-size: 16px;
       font-weight: 400;
-      line-height: 24px;
+      line-height: 36px;
       text-align: left; }
 
 /* Landscape phone to portrait tablet */
@@ -630,8 +695,8 @@ img {
         font-size: 24px; }
       .aboutMeWrapper .aboutMeText p {
         color: #464646;
-        font-size: 14px;
-        line-height: 14px; } }
+        font-size: 12px;
+        line-height: 18px; } }
 
 .contact {
   width: 100%;
@@ -646,6 +711,7 @@ img {
       font-size: 36px;
       font-weight: 700;
       margin: 75px auto;
+      margin-bottom: 25px;
       background-image: url("../../../public/assets/titleBG.png");
       background-size: contain;
       background-repeat: no-repeat; }
@@ -665,18 +731,21 @@ img {
         .contact .contactWrapper .contactContainer a svg {
           margin-right: 10px; }
     .contact .contactWrapper form {
-      width: 75%;
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
       margin: 0 auto;
       background-color: #ffffff;
-      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1); }
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+      padding: 30px; }
       .contact .contactWrapper form input[type=text], .contact .contactWrapper form input[type=email] {
-        width: 48%;
-        margin: 10px 10px 10px 10px; }
+        width: 45%;
+        margin: 15px auto;
+        padding: 10px; }
       .contact .contactWrapper form textarea {
-        width: 96%;
-        margin: 0 10px; }
+        width: 95%;
+        margin: 10px auto;
+        padding: 10px; }
       .contact .contactWrapper form input[type=submit] {
         border: 2px solid transparent;
         width: 183px;
@@ -692,6 +761,43 @@ img {
           background: white;
           color: black;
           border: 1px solid black; }
+
+@media (max-width: 940px) {
+  .contact textarea {
+    margin: 25px auto; } }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .contact .contactWrapper {
+    justify-content: center; }
+    .contact .contactWrapper h2 {
+      font-size: 24px;
+      margin: 45px auto;
+      margin-bottom: 15px; }
+    .contact .contactWrapper .contactContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 15px auto; }
+      .contact .contactWrapper .contactContainer a {
+        font-size: 16px;
+        width: 100%;
+        margin: 5px; }
+        .contact .contactWrapper .contactContainer a svg {
+          margin-right: 10px; }
+    .contact .contactWrapper form {
+      width: 90%;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      box-shadow: none; }
+      .contact .contactWrapper form input[type=text], .contact .contactWrapper form input[type=email] {
+        width: 90%;
+        margin: 15px auto; }
+      .contact .contactWrapper form textarea {
+        width: 90%;
+        margin: 15px auto; } }
 
 footer {
   background-color: #fafafa;
@@ -720,6 +826,21 @@ footer {
     text-align: center;
     margin: 0; }
 
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  footer {
+    padding-top: 15px; }
+    footer ul {
+      width: 45.12%; }
+    footer h3 {
+      color: #606060;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      margin: 0; } }
+
 header {
   background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg2.jpg");
   background-size: cover;
@@ -744,10 +865,10 @@ header {
     width: 100%;
     z-index: 10000; }
     header nav .logoContainer {
-      width: 7.145%; }
+      width: 5.145%; }
       header nav .logoContainer img {
-        width: 70px;
-        height: 70px; }
+        width: 50px;
+        height: 50px; }
     header nav ul {
       display: flex;
       width: 58.12%;
@@ -760,7 +881,8 @@ header {
           text-transform: uppercase;
           color: #aaaaaa;
           border-bottom: 2px solid transparent;
-          transition: all 1s; }
+          transition: all 1s;
+          font-size: 12px; }
           header nav ul li a:hover {
             color: white;
             border-bottom: 2px solid white; }
@@ -785,8 +907,8 @@ header {
         display: block;
         font-size: 72px; }
     header .introContainer h3 {
-      color: #606060;
-      font-size: 12px;
+      color: white;
+      font-size: 20px;
       line-height: 16px;
       width: 100%;
       text-transform: uppercase; }
@@ -813,7 +935,7 @@ header {
           margin-right: 50px;
           transition: all 1s; }
           header .socialShare ul li a:hover {
-            color: white; }
+            color: grey; }
 
 .menu li:hover, .menu li.active {
   background: transparent none repeat scroll 0 0; }
@@ -827,10 +949,19 @@ header {
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header .socialShare ul {
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 20px; }
+    header .socialShare ul li a {
+      font-size: 18px;
+      margin-right: 20px; } }
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
   header nav {
-    justify-content: space-between; }
+    justify-content: flex-start; }
     header nav ul {
       width: 75%;
       justify-content: space-between;
@@ -861,6 +992,7 @@ header {
     font-size: 36px;
     font-weight: 700;
     margin: 75px auto;
+    margin-bottom: 25px;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -876,28 +1008,27 @@ header {
         width: 47%;
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
         transition: all 0.5s; }
-        .projects .projectContainer .project .projectImage:hover {
-          transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
         width: 47%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; }
+        justify-content: center;
+        text-align: left; }
         .projects .projectContainer .project .projectDescription h3 {
           color: #000000;
           font-size: 24px;
-          font-weight: 700;
-          margin: 0 auto; }
+          font-weight: 700; }
         .projects .projectContainer .project .projectDescription p {
           color: #606060;
           font-size: 14px;
           font-weight: 400;
           line-height: 24px;
-          padding: 10px; }
+          padding: 20px; }
         .projects .projectContainer .project .projectDescription h4 {
           font-style: italic;
           margin: 0 auto;
-          width: 100%; }
+          width: 100%;
+          padding: 20px; }
         .projects .projectContainer .project .projectDescription a {
           background-color: white;
           color: black;
@@ -1095,6 +1226,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 36px;
     font-weight: 700;
     margin: 75px auto;
+    margin-bottom: 25px;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
     background-repeat: no-repeat; }
@@ -1107,8 +1239,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       width: calc(33.333% - 25px);
       margin-right: 25px;
       padding: 50px; }
-      .skills .skillContainer .skill:hover {
-        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
       .skills .skillContainer .skill i {
         font-size: 60px; }
     .skills .skillContainer .skill:nth-child(3n) {

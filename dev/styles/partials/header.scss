@@ -24,10 +24,10 @@ header {
         width: 100%;
         z-index: 10000;
         .logoContainer {
-            width: 7.145%;
+            width: 5.145%;
             img {
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
             }
         }
         ul {
@@ -44,6 +44,7 @@ header {
               color:  #aaaaaa;
               border-bottom: 2px solid transparent;
               transition: all 1s;
+              font-size: 12px;
 
               &:hover {
                   color: white;
@@ -84,8 +85,8 @@ header {
             }
         }
         h3 {
-            color:  #606060;
-            font-size: 12px;
+            color:  white;
+            font-size: 20px;
             line-height: 16px;
             width: 100%;
             text-transform: uppercase;
@@ -117,7 +118,7 @@ header {
               transition: all 1s;
 
               &:hover {
-                  color: white;
+                  color: grey;
               }
             }
         }
@@ -149,6 +150,44 @@ header {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+
+header {
+    
+   
+
+    
+
+
+  
+
+
+  .socialShare {
+            ul {
+            width: 50%;
+            margin: 0 auto;
+            padding-left: 20px;
+
+            li {
+            a {
+              font-size: 18px;
+              margin-right: 20px;
+            }
+        }
+        }
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
 }
 
 /* Landscape phones and down */
@@ -160,7 +199,7 @@ header {
    
 
     nav {
-        justify-content: space-between;
+        justify-content: flex-start;
   
         ul {
             width: 75%;
