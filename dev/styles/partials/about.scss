@@ -52,3 +52,56 @@
 
 
 }
+
+
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+.aboutMeWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
+
+
+.aboutMeImage {
+    width: 39.316%;
+    border: 2px solid white;
+    margin: 15px;
+
+    .aboutMeBack {
+    display: none;
+        
+    }
+}
+
+.aboutMeText {
+    width: 50.85%;
+    display: flex;
+    justify-content: center;
+    
+
+
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        color:  #464646;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+
+}
+
+
+}
+
+}

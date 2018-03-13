@@ -132,13 +132,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-background.jpg");
+  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   max-width: 100%;
   background-position: center;
-  color: black; }
+  color: white; }
   header nav {
     width: 100%;
     display: flex;
@@ -180,7 +180,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid blue;
     height: 100vh;
     position: relative; }
   header .introContainer {
@@ -189,7 +188,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    border: 1px solid red;
     justify-content: center; }
     header .introContainer h1 {
       font-size: 24px;
@@ -207,7 +205,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 1px solid green;
     position: absolute;
     bottom: 4%;
     left: 0; }
@@ -222,7 +219,7 @@ header {
         header .socialShare ul li a {
           text-decoration: none;
           text-transform: uppercase;
-          color: black;
+          color: white;
           font-size: 24px;
           margin-right: 50px;
           transition: all 1s; }
@@ -238,6 +235,33 @@ header {
 #top-menu li.active a {
   border-bottom: 3px solid white;
   color: white; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header nav {
+    justify-content: space-between; }
+    header nav ul {
+      width: 75%;
+      justify-content: space-between;
+      margin-right: 25px; }
+      header nav ul li a {
+        font-size: 12px; }
+  header .introContainer h1 {
+    font-size: 16px; }
+    header .introContainer h1 span {
+      font-size: 18px; }
+  header .introContainer h3 {
+    color: #606060;
+    font-size: 12px; }
+  header .socialShare ul {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 20px; }
+    header .socialShare ul li a {
+      font-size: 16px;
+      margin-right: 20px; } }
 
 .aboutMeWrapper {
   display: flex;
@@ -275,6 +299,30 @@ header {
       line-height: 24px;
       text-align: left; }
 
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .aboutMeWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px; }
+    .aboutMeWrapper .aboutMeImage {
+      width: 39.316%;
+      border: 2px solid white;
+      margin: 15px; }
+      .aboutMeWrapper .aboutMeImage .aboutMeBack {
+        display: none; }
+    .aboutMeWrapper .aboutMeText {
+      width: 50.85%;
+      display: flex;
+      justify-content: center; }
+      .aboutMeWrapper .aboutMeText h2 {
+        font-size: 24px; }
+      .aboutMeWrapper .aboutMeText p {
+        color: #464646;
+        font-size: 14px;
+        line-height: 14px; } }
+
 .skills {
   width: 100%;
   text-align: center;
@@ -284,7 +332,6 @@ header {
     color: #000000;
     font-size: 36px;
     font-weight: 700;
-    border: 1px solid blue;
     margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
@@ -293,7 +340,6 @@ header {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid green;
     justify-content: space-between; }
     .skills .skillContainer .skill {
       width: calc(33.333% - 25px);
@@ -306,6 +352,27 @@ header {
     .skills .skillContainer .skill:nth-child(3n) {
       margin-right: 0; }
 
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .skills {
+    margin: 25px 0; }
+    .skills h2 {
+      font-size: 24px;
+      margin: 45px auto;
+      margin-bottom: 15px; }
+    .skills .skillContainer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .skills .skillContainer .skill {
+        width: calc(33.3333% - 25px);
+        margin-right: 25px;
+        padding: 25px; }
+        .skills .skillContainer .skill i {
+          font-size: 40px; } }
+
 .projects {
   width: 100%;
   text-align: center;
@@ -314,7 +381,6 @@ header {
     color: #000000;
     font-size: 36px;
     font-weight: 700;
-    border: 1px solid blue;
     margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
@@ -328,13 +394,13 @@ header {
       display: flex;
       margin: 25px; }
       .projects .projectContainer .project .projectImage {
-        width: 48%;
+        width: 47%;
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
         transition: all 0.5s; }
         .projects .projectContainer .project .projectImage:hover {
           transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
-        width: 48%;
+        width: 47%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; }
@@ -347,7 +413,8 @@ header {
           color: #606060;
           font-size: 14px;
           font-weight: 400;
-          line-height: 24px; }
+          line-height: 24px;
+          padding: 10px; }
         .projects .projectContainer .project .projectDescription h4 {
           font-style: italic;
           margin: 0 auto;
@@ -368,6 +435,44 @@ header {
             background-color: black;
             color: white; }
 
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .projects {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0; }
+    .projects h2 {
+      font-size: 24px;
+      margin: 45px auto;
+      margin-bottom: 15px; }
+    .projects .projectContainer {
+      flex-wrap: wrap; }
+      .projects .projectContainer .project {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px; }
+        .projects .projectContainer .project .projectImage {
+          width: 90%;
+          box-shadow: none;
+          margin: 0 auto;
+          order: 1; }
+        .projects .projectContainer .project .projectDescription {
+          width: 90%;
+          margin: 0 auto;
+          order: 2; }
+          .projects .projectContainer .project .projectDescription h3 {
+            font-size: 24px; }
+          .projects .projectContainer .project .projectDescription p {
+            font-size: 14px; }
+          .projects .projectContainer .project .projectDescription a {
+            width: 150px;
+            height: 44px;
+            padding: 14px;
+            font-size: 14px;
+            margin: 10px; } }
+
 .contact {
   width: 100%;
   text-align: center;
@@ -380,7 +485,6 @@ header {
       color: #000000;
       font-size: 36px;
       font-weight: 700;
-      border: 1px solid blue;
       margin: 75px auto;
       background-image: url("../../../public/assets/titleBG.png");
       background-size: contain;
@@ -505,6 +609,30 @@ img {
       line-height: 24px;
       text-align: left; }
 
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .aboutMeWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px; }
+    .aboutMeWrapper .aboutMeImage {
+      width: 39.316%;
+      border: 2px solid white;
+      margin: 15px; }
+      .aboutMeWrapper .aboutMeImage .aboutMeBack {
+        display: none; }
+    .aboutMeWrapper .aboutMeText {
+      width: 50.85%;
+      display: flex;
+      justify-content: center; }
+      .aboutMeWrapper .aboutMeText h2 {
+        font-size: 24px; }
+      .aboutMeWrapper .aboutMeText p {
+        color: #464646;
+        font-size: 14px;
+        line-height: 14px; } }
+
 .contact {
   width: 100%;
   text-align: center;
@@ -517,7 +645,6 @@ img {
       color: #000000;
       font-size: 36px;
       font-weight: 700;
-      border: 1px solid blue;
       margin: 75px auto;
       background-image: url("../../../public/assets/titleBG.png");
       background-size: contain;
@@ -594,13 +721,13 @@ footer {
     margin: 0; }
 
 header {
-  background-image: linear-gradient(to right, rgba(239, 239, 247, 0.85), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-background.jpg");
+  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg2.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   max-width: 100%;
   background-position: center;
-  color: black; }
+  color: white; }
   header nav {
     width: 100%;
     display: flex;
@@ -642,7 +769,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid blue;
     height: 100vh;
     position: relative; }
   header .introContainer {
@@ -651,7 +777,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    border: 1px solid red;
     justify-content: center; }
     header .introContainer h1 {
       font-size: 24px;
@@ -669,7 +794,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    border: 1px solid green;
     position: absolute;
     bottom: 4%;
     left: 0; }
@@ -684,7 +808,7 @@ header {
         header .socialShare ul li a {
           text-decoration: none;
           text-transform: uppercase;
-          color: black;
+          color: white;
           font-size: 24px;
           margin-right: 50px;
           transition: all 1s; }
@@ -701,6 +825,33 @@ header {
   border-bottom: 3px solid white;
   color: white; }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header nav {
+    justify-content: space-between; }
+    header nav ul {
+      width: 75%;
+      justify-content: space-between;
+      margin-right: 25px; }
+      header nav ul li a {
+        font-size: 12px; }
+  header .introContainer h1 {
+    font-size: 16px; }
+    header .introContainer h1 span {
+      font-size: 18px; }
+  header .introContainer h3 {
+    color: #606060;
+    font-size: 12px; }
+  header .socialShare ul {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 20px; }
+    header .socialShare ul li a {
+      font-size: 16px;
+      margin-right: 20px; } }
+
 .projects {
   width: 100%;
   text-align: center;
@@ -709,7 +860,6 @@ header {
     color: #000000;
     font-size: 36px;
     font-weight: 700;
-    border: 1px solid blue;
     margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
@@ -723,13 +873,13 @@ header {
       display: flex;
       margin: 25px; }
       .projects .projectContainer .project .projectImage {
-        width: 48%;
+        width: 47%;
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
         transition: all 0.5s; }
         .projects .projectContainer .project .projectImage:hover {
           transform: scale(1.05); }
       .projects .projectContainer .project .projectDescription {
-        width: 48%;
+        width: 47%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center; }
@@ -742,7 +892,8 @@ header {
           color: #606060;
           font-size: 14px;
           font-weight: 400;
-          line-height: 24px; }
+          line-height: 24px;
+          padding: 10px; }
         .projects .projectContainer .project .projectDescription h4 {
           font-style: italic;
           margin: 0 auto;
@@ -762,6 +913,44 @@ header {
           .projects .projectContainer .project .projectDescription a:hover {
             background-color: black;
             color: white; }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .projects {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0; }
+    .projects h2 {
+      font-size: 24px;
+      margin: 45px auto;
+      margin-bottom: 15px; }
+    .projects .projectContainer {
+      flex-wrap: wrap; }
+      .projects .projectContainer .project {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px; }
+        .projects .projectContainer .project .projectImage {
+          width: 90%;
+          box-shadow: none;
+          margin: 0 auto;
+          order: 1; }
+        .projects .projectContainer .project .projectDescription {
+          width: 90%;
+          margin: 0 auto;
+          order: 2; }
+          .projects .projectContainer .project .projectDescription h3 {
+            font-size: 24px; }
+          .projects .projectContainer .project .projectDescription p {
+            font-size: 14px; }
+          .projects .projectContainer .project .projectDescription a {
+            width: 150px;
+            height: 44px;
+            padding: 14px;
+            font-size: 14px;
+            margin: 10px; } }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -905,7 +1094,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     color: #000000;
     font-size: 36px;
     font-weight: 700;
-    border: 1px solid blue;
     margin: 75px auto;
     background-image: url("../../../public/assets/titleBG.png");
     background-size: contain;
@@ -914,7 +1102,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid green;
     justify-content: space-between; }
     .skills .skillContainer .skill {
       width: calc(33.333% - 25px);
@@ -926,3 +1113,24 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
         font-size: 60px; }
     .skills .skillContainer .skill:nth-child(3n) {
       margin-right: 0; }
+
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .skills {
+    margin: 25px 0; }
+    .skills h2 {
+      font-size: 24px;
+      margin: 45px auto;
+      margin-bottom: 15px; }
+    .skills .skillContainer {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .skills .skillContainer .skill {
+        width: calc(33.3333% - 25px);
+        margin-right: 25px;
+        padding: 25px; }
+        .skills .skillContainer .skill i {
+          font-size: 40px; } }

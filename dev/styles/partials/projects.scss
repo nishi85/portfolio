@@ -6,7 +6,6 @@
         color:  #000000;
         font-size: 36px;
         font-weight: 700;
-        border: 1px solid blue;
         margin: 75px auto;
          background-image: url("../../../public/assets/titleBG.png");
         background-size: contain;
@@ -23,7 +22,7 @@
         display: flex;
         margin: 25px;
             .projectImage {
-                width: 48%;
+                width: 47%;
                 box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
                 transition: all 0.5s;
 
@@ -32,7 +31,7 @@
                 }
             }
             .projectDescription {
-                width: 48%;
+                width: 47%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -49,6 +48,7 @@
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 24px;
+                    padding: 10px;
                 }
 
                 h4 {
@@ -80,5 +80,83 @@
             }
         }
     }
+
+}
+
+
+
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+
+.projects {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+    h2 {
+         font-size: 24px;
+        margin: 45px auto;
+
+        margin-bottom: 15px;
+    }
+
+    .projectContainer {
+        flex-wrap: wrap;
+
+        .project {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px;
+            .projectImage {
+                width: 90%;
+                box-shadow: none;
+              margin: 0 auto;
+              order: 1
+            }
+            .projectDescription {
+                width: 90%;
+                margin: 0 auto;
+                order: 2;
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                h4 {
+                }
+
+                a {
+                    width: 150px;
+                    height: 44px;
+                    padding: 14px;
+                    font-size: 14px;
+                    margin: 10px;
+
+                }
+
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
 
 }
