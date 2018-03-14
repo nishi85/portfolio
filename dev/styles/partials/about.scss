@@ -58,11 +58,31 @@
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 748px) {
+
+
+.aboutMeWrapper {
+
+
+
+  .aboutMeImage {
+    width: 39.316%;
+    border: 2px solid white;
+    margin: 15px;
+
+    .aboutMeBack {
+    display: none;
+        
+    }
+}
+
+
+
+}
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 540px) {
 
 
 .aboutMeWrapper {
@@ -74,7 +94,7 @@
 .aboutMeImage {
     width: 39.316%;
     border: 2px solid white;
-    margin: 15px;
+    margin: 15px auto;
 
     .aboutMeBack {
     display: none;
@@ -83,19 +103,21 @@
 }
 
 .aboutMeText {
-    width: 50.85%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
     
 
 
     h2 {
         font-size: 24px;
+        margin: 0 auto;
     }
     p {
         color:  #464646;
         font-size: 12px;
-        line-height: 18px;
+        line-height: 20px;
     }
 
 

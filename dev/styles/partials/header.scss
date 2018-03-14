@@ -226,7 +226,7 @@ header {
             }
         }
         h3 {
-            color:  #606060;
+            color: white;
             font-size: 12px;
             }
     }
@@ -234,7 +234,7 @@ header {
 
   .socialShare {
             ul {
-            width: 30%;
+            width: 50%;
             margin: 0 auto;
             padding-left: 20px;
 
@@ -257,7 +257,7 @@ header {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
 
 
 header {
@@ -296,7 +296,6 @@ header {
             }
         }
         h3 {
-            color:  #606060;
             font-size: 12px;
             }
     }

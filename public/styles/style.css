@@ -263,17 +263,17 @@ header {
     header .introContainer h1 span {
       font-size: 18px; }
   header .introContainer h3 {
-    color: #606060;
+    color: white;
     font-size: 12px; }
   header .socialShare ul {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     padding-left: 20px; }
     header .socialShare ul li a {
       font-size: 16px;
       margin-right: 20px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   header nav {
     justify-content: flex-start; }
     header nav .logoContainer {
@@ -289,7 +289,6 @@ header {
     header .introContainer h1 span {
       font-size: 18px; }
   header .introContainer h3 {
-    color: #606060;
     font-size: 12px; }
   header .socialShare ul {
     width: 30%;
@@ -336,8 +335,16 @@ header {
       text-align: left; }
 
 /* Landscape phone to portrait tablet */
+@media (max-width: 748px) {
+  .aboutMeWrapper .aboutMeImage {
+    width: 39.316%;
+    border: 2px solid white;
+    margin: 15px; }
+    .aboutMeWrapper .aboutMeImage .aboutMeBack {
+      display: none; } }
+
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .aboutMeWrapper {
     display: flex;
     justify-content: space-between;
@@ -345,19 +352,21 @@ header {
     .aboutMeWrapper .aboutMeImage {
       width: 39.316%;
       border: 2px solid white;
-      margin: 15px; }
+      margin: 15px auto; }
       .aboutMeWrapper .aboutMeImage .aboutMeBack {
         display: none; }
     .aboutMeWrapper .aboutMeText {
-      width: 50.85%;
+      width: 100%;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 10px; }
       .aboutMeWrapper .aboutMeText h2 {
-        font-size: 24px; }
+        font-size: 24px;
+        margin: 0 auto; }
       .aboutMeWrapper .aboutMeText p {
         color: #464646;
         font-size: 12px;
-        line-height: 18px; } }
+        line-height: 20px; } }
 
 .skills {
   width: 100%;
@@ -539,7 +548,8 @@ header {
         .projects .projectContainer .project .projectDescription {
           width: 90%;
           margin: 0 auto;
-          order: 2; }
+          order: 2;
+          justify-content: center; }
           .projects .projectContainer .project .projectDescription h3 {
             font-size: 24px; }
           .projects .projectContainer .project .projectDescription p {
@@ -641,7 +651,8 @@ header {
       margin: 15px auto; }
       .contact .contactWrapper .contactContainer a {
         font-size: 16px;
-        margin: 0 auto; }
+        margin: 10px auto;
+        width: 100%; }
         .contact .contactWrapper .contactContainer a svg {
           margin-right: 10px; }
     .contact .contactWrapper form {
@@ -749,8 +760,16 @@ img {
       text-align: left; }
 
 /* Landscape phone to portrait tablet */
+@media (max-width: 748px) {
+  .aboutMeWrapper .aboutMeImage {
+    width: 39.316%;
+    border: 2px solid white;
+    margin: 15px; }
+    .aboutMeWrapper .aboutMeImage .aboutMeBack {
+      display: none; } }
+
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .aboutMeWrapper {
     display: flex;
     justify-content: space-between;
@@ -758,19 +777,21 @@ img {
     .aboutMeWrapper .aboutMeImage {
       width: 39.316%;
       border: 2px solid white;
-      margin: 15px; }
+      margin: 15px auto; }
       .aboutMeWrapper .aboutMeImage .aboutMeBack {
         display: none; }
     .aboutMeWrapper .aboutMeText {
-      width: 50.85%;
+      width: 100%;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding: 10px; }
       .aboutMeWrapper .aboutMeText h2 {
-        font-size: 24px; }
+        font-size: 24px;
+        margin: 0 auto; }
       .aboutMeWrapper .aboutMeText p {
         color: #464646;
         font-size: 12px;
-        line-height: 18px; } }
+        line-height: 20px; } }
 
 .contact {
   width: 100%;
@@ -862,7 +883,8 @@ img {
       margin: 15px auto; }
       .contact .contactWrapper .contactContainer a {
         font-size: 16px;
-        margin: 0 auto; }
+        margin: 10px auto;
+        width: 100%; }
         .contact .contactWrapper .contactContainer a svg {
           margin-right: 10px; }
     .contact .contactWrapper form {
@@ -1051,17 +1073,17 @@ header {
     header .introContainer h1 span {
       font-size: 18px; }
   header .introContainer h3 {
-    color: #606060;
+    color: white;
     font-size: 12px; }
   header .socialShare ul {
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     padding-left: 20px; }
     header .socialShare ul li a {
       font-size: 16px;
       margin-right: 20px; } }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   header nav {
     justify-content: flex-start; }
     header nav .logoContainer {
@@ -1077,7 +1099,6 @@ header {
     header .introContainer h1 span {
       font-size: 18px; }
   header .introContainer h3 {
-    color: #606060;
     font-size: 12px; }
   header .socialShare ul {
     width: 30%;
@@ -1218,7 +1239,8 @@ header {
         .projects .projectContainer .project .projectDescription {
           width: 90%;
           margin: 0 auto;
-          order: 2; }
+          order: 2;
+          justify-content: center; }
           .projects .projectContainer .project .projectDescription h3 {
             font-size: 24px; }
           .projects .projectContainer .project .projectDescription p {
