@@ -1,6 +1,6 @@
 header {
     
-    background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)),url("../../../public/assets/nishi-bg2.jpg");
+    background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)),url("../../../public/assets/nishi-bg3.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -203,6 +203,76 @@ header {
   
         ul {
             width: 75%;
+            justify-content: space-between;
+            margin-right: 25px;
+
+            li {
+            a {
+            font-size: 12px;
+
+            }
+        }
+      }
+    }
+
+
+    .introContainer {
+        
+        h1 {
+            font-size: 16px;
+
+            span {
+                font-size: 18px;
+            }
+        }
+        h3 {
+            color:  #606060;
+            font-size: 12px;
+            }
+    }
+
+
+  .socialShare {
+            ul {
+            width: 30%;
+            margin: 0 auto;
+            padding-left: 20px;
+
+            li {
+            a {
+              font-size: 16px;
+              margin-right: 20px;
+            }
+        }
+        }
+    }
+
+
+
+
+
+}
+
+
+
+}
+
+@media (max-width: 480px) {
+
+
+header {
+    
+   
+
+    nav {
+        justify-content: flex-start;
+
+        .logoContainer {
+            display: none;
+        }
+  
+        ul {
+            width: 90%;
             justify-content: space-between;
             margin-right: 25px;
 

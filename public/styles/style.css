@@ -132,7 +132,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg2.jpg");
+  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg3.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -254,6 +254,32 @@ header {
     justify-content: flex-start; }
     header nav ul {
       width: 75%;
+      justify-content: space-between;
+      margin-right: 25px; }
+      header nav ul li a {
+        font-size: 12px; }
+  header .introContainer h1 {
+    font-size: 16px; }
+    header .introContainer h1 span {
+      font-size: 18px; }
+  header .introContainer h3 {
+    color: #606060;
+    font-size: 12px; }
+  header .socialShare ul {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 20px; }
+    header .socialShare ul li a {
+      font-size: 16px;
+      margin-right: 20px; } }
+
+@media (max-width: 480px) {
+  header nav {
+    justify-content: flex-start; }
+    header nav .logoContainer {
+      display: none; }
+    header nav ul {
+      width: 90%;
       justify-content: space-between;
       margin-right: 25px; }
       header nav ul li a {
@@ -894,7 +920,7 @@ footer {
       margin: 0; } }
 
 header {
-  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg2.jpg");
+  background-image: linear-gradient(to right, rgba(43, 35, 29, 0.529), rgba(43, 35, 29, 0)), url("../../../public/assets/nishi-bg3.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
@@ -1016,6 +1042,32 @@ header {
     justify-content: flex-start; }
     header nav ul {
       width: 75%;
+      justify-content: space-between;
+      margin-right: 25px; }
+      header nav ul li a {
+        font-size: 12px; }
+  header .introContainer h1 {
+    font-size: 16px; }
+    header .introContainer h1 span {
+      font-size: 18px; }
+  header .introContainer h3 {
+    color: #606060;
+    font-size: 12px; }
+  header .socialShare ul {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 20px; }
+    header .socialShare ul li a {
+      font-size: 16px;
+      margin-right: 20px; } }
+
+@media (max-width: 480px) {
+  header nav {
+    justify-content: flex-start; }
+    header nav .logoContainer {
+      display: none; }
+    header nav ul {
+      width: 90%;
       justify-content: space-between;
       margin-right: 25px; }
       header nav ul li a {
