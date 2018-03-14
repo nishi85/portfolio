@@ -114,6 +114,20 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+.contact {
+
+    .contactWrapper {
+
+    .contactContainer {
+
+       a {     
+                margin: 0 auto;
+              font-size: 18px;
+        }
+    }
+    }
+}
 }
 
 /* Landscape phones and down */
@@ -141,8 +155,7 @@
 
        a {
               font-size: 16px;
-              width: 100%;
-              margin: 5px;
+              margin: 0 auto;
               
               svg{
                   margin-right: 10px;
